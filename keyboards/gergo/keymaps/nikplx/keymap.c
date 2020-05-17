@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                        |      |   |      |                                 |      |   | DEL |
  *                        '------'   '------'                                 `------.   '-----'
  *                                        ,-------.                     ,-------.
- *                                        |       |                     | PgUp  |
+ *                                        | RESET |                     | PgUp  |
  *                                 ,------|-------|                     |-------|------.
  *                                 |      |       |                     |       |      |
  *                                 |   ;  |   =   |                     |   =   |   ;  |
@@ -72,7 +72,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [SYMB] = LAYOUT_gergo(
     _______, DE_EXLM, DE_DQUO, DE_LCBR, DE_RCBR, DE_PIPE,                                            _______, _______, _______, _______, _______, _______,
     _______, DE_DLR,  DE_PERC, DE_LPRN, DE_RPRN, DE_AMPR,  _______,                          _______, DE_PLUS, DE_MINS, DE_SLSH, DE_ASTR, DE_PIPE, _______,
-    _______, DE_PERC, DE_CIRC, DE_LBRC, DE_RBRC, DE_TILD,  _______, _______,        _______, _______, DE_GRV,  DE_EQL,  DE_COMM, DE_DOT,  DE_QUES, _______,
+    _______, DE_AT,   DE_EURO, DE_LBRC, DE_RBRC, DE_TILD,  _______, RESET,          _______, _______, DE_GRV,  DE_EQL,  DE_COMM, DE_DOT,  DE_QUES, _______,
                                          _______, _______, DE_SCLN, DE_EQL,         DE_EQL,  DE_SCLN, KC_PGUP, KC_DEL
     ),
 /* Keymap 2: Pad/Function layer
