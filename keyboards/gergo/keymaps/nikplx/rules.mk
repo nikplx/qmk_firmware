@@ -35,3 +35,5 @@ endif
 ifeq ($(strip $(DEBUG_MATRIX)), yes)
     OPT_DEFS += -DDEBUG_MATRIX
 endif
+
+DEBOUNCE_TYPE= sym_pk
