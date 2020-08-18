@@ -169,7 +169,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *
  *
  * ,-------------------------------------------.                         ,-------------------------------------------.
- * |        |  !   |  "   |  €   |  {   |  }   |                         |   `  |  7   |  8   |  9   |  ?   |        |
+ * |        |  !   |  "   |  €   |  {   |  }   |                         |   `  |  7   |  8   |  9   |  ?   |  DEL   |
  * |--------+------+------+------+------+------|------.           .------|------+------+------+------+------+--------|
  * |        |  @   |  $   |  %   |  (   |  )   |      |           |      |   /  |  4   |  5   |  6   |  =   |        |
  * |--------+------+------+------+------+------|------|           |------|------+------+------+------+------+--------|
@@ -188,7 +188,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *
  */
 [_RAISE] = LAYOUT_gergo(
-    _______, DE_EXLM, DE_DQUO, DE_EURO, DE_LCBR, DE_RCBR,                                             DE_GRV,  DE_7, DE_8, DE_9,  DE_QUES, _______,
+    _______, DE_EXLM, DE_DQUO, DE_EURO, DE_LCBR, DE_RCBR,                                             DE_GRV,  DE_7, DE_8, DE_9,  DE_QUES, KC_DEL,
     _______, DE_AT,   DE_DLR,  DE_PERC, DE_LPRN, DE_RPRN,  _______,                          _______, DE_SLSH, DE_4, DE_5, DE_6,  DE_EQL,  _______,
     _______, DE_PIPE, DE_CIRC, DE_AMPR, DE_LBRC, DE_RBRC,  _______, _______,        _______, _______, DE_BSLS, DE_1, DE_2, DE_3,  DE_TILD, _______,
                                          DE_LABK, DE_RABK, _______, _______,        _______, _______, DE_0,    DE_DOT
