@@ -89,12 +89,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-------------------------------------------.                         ,-------------------------------------------.
  * |   ESC  |   Q  |   W  |   E  |   R  |   T  |                         |   Z  |   U  |   I  |   O  |   P  |   BS   |
  * |--------+------+------+------+------+------|------.           .------|------+------+------+------+------+--------|
- * | LShift |   A  |   S  |   D  |   F  |   G  | VOL+ |           | Play |   H  |   J  |   K  |   L  |RAI/+*| Ctrl/#'|
+ * | LCtrl  |   A  |   S  |   D  |   F  |   G  | VOL+ |           | Play |   H  |   J  |   K  |   L  |RAI/+*| Ctrl/#'|
  * |--------+------+------+------+------+------|------|           |------|------+------+------+------+------+--------|
- * |  LCtl  |   Y  |   X  |   C  |   V  |   B  | VOL- |           | Next |   N  |   M  | ,  ; | . :  | -  _ | RShift |
+ * | LShift |   Y  |   X  |   C  |   V  |   B  | VOL- |           | Next |   N  |   M  | ,  ; | . :  | -  _ | RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *                    .----------.   .-------.                                 .-------.   .----------.
- *                    |   SPC    |   |  NUMB |                                 |GUI/SPC|   | TG MOUSE |
+ *                    |   ALT    |   |  SPC  |                                 |GUI/SPC|   | TG MOUSE |
  *                    '----------'   '-------'                                 `-------'   '----------'
  *                                        ,-------.                      ,-------.
  *                                        |   F5  |                      |  F12  |
@@ -107,18 +107,18 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_GAMING] = LAYOUT_gergo(
     KC_ESC,          KC_Q,         KC_W,      KC_E,   KC_R,     KC_T,                                                   DE_Z,          KC_U,         KC_I,     KC_O,   KC_P,           KC_BSPC,
-    KC_LSFT,         KC_A,         KC_S,      KC_D,   KC_F,     KC_G,           KC_VOLU,                       KC_MPLY, KC_H,          KC_J,         KC_K,     LOW_T(KC_L),   RAI_T(DE_PLUS), RCTL_T(DE_HASH),
-    KC_LCTL,         DE_Y,         KC_X,      KC_C,   KC_V,     KC_B,           KC_VOLD, KC_F5,        KC_F12, KC_MNXT, KC_N,          KC_M,         DE_COMM,  DE_DOT, DE_MINS,        KC_RSFT,
-                                              KC_SPC, MO(_GAMING_NUMB),DEA_T(KC_ENT),  KC_PGDN,       KC_PGUP,DEA_T(KC_ENT),  LGUI_T(KC_SPC), TG(_MOUSE)
+    KC_LCTL,         KC_A,         KC_S,      KC_D,   KC_F,     KC_G,           KC_VOLU,                       KC_MPLY, KC_H,          KC_J,         KC_K,     LOW_T(KC_L),   RAI_T(DE_PLUS), RCTL_T(DE_HASH),
+    KC_LSFT,         DE_Y,         KC_X,      KC_C,   KC_V,     KC_B,           KC_VOLD, KC_F5,        KC_F12, KC_MNXT, KC_N,          KC_M,         DE_COMM,  DE_DOT, DE_MINS,        KC_RSFT,
+                                              KC_LALT, KC_SPC, MO(_GAMING_NUMB), KC_PGDN,       KC_PGUP,DEA_T(KC_ENT),  LGUI_T(KC_SPC), TG(_MOUSE)
     ),
 /* Gaming Numb
  *
  * ,-------------------------------------------.                         ,-------------------------------------------.
  * |   ESC  |   7  |   8  |   9  |   R  |   T  |                         |   Z  |   U  |   I  |   O  |   P  |   BS   |
  * |--------+------+------+------+------+------|------.           .------|------+------+------+------+------+--------|
- * | LShift |   1  |   2  |   3  |   F  |   G  | VOL+ |           | Play |   H  |   J  |   K  |   L  |RAI/+*| Ctrl/#'|
+ * |  LCtrl |   1  |   2  |   3  |   F  |   G  | VOL+ |           | Play |   H  |   J  |   K  |   L  |RAI/+*| Ctrl/#'|
  * |--------+------+------+------+------+------|------|           |------|------+------+------+------+------+--------|
- * |  LCtl  |   4  |   5  |   6  |   V  |   B  | VOL- |           | Next |   N  |   M  | ,  ; | . :  | -  _ | RShift |
+ * | LShift |   4  |   5  |   6  |   V  |   B  | VOL- |           | Next |   N  |   M  | ,  ; | . :  | -  _ | RShift |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
  *                    .----------.   .-------.                                 .-------.   .----------.
  *                    |   SPC    |   |  SPC  |                                 |GUI/SPC|   | TG MOUSE |
@@ -169,7 +169,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *
  *
  * ,-------------------------------------------.                         ,-------------------------------------------.
- * |        |  !   |  "   |  €   |  {   |  }   |                         |   `  |  7   |  8   |  9   |  ?   |        |
+ * |        |  !   |  "   |  €   |  {   |  }   |                         |   `  |  7   |  8   |  9   |  ?   |  DEL   |
  * |--------+------+------+------+------+------|------.           .------|------+------+------+------+------+--------|
  * |        |  @   |  $   |  %   |  (   |  )   |      |           |      |   /  |  4   |  5   |  6   |  =   |        |
  * |--------+------+------+------+------+------|------|           |------|------+------+------+------+------+--------|
@@ -188,7 +188,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *
  */
 [_RAISE] = LAYOUT_gergo(
-    _______, DE_EXLM, DE_DQUO, DE_EURO, DE_LCBR, DE_RCBR,                                             DE_GRV,  DE_7, DE_8, DE_9,  DE_QUES, _______,
+    KC_DEL,  DE_EXLM, DE_DQUO, DE_EURO, DE_LCBR, DE_RCBR,                                             DE_GRV,  DE_7, DE_8, DE_9,  DE_QUES, _______,
     _______, DE_AT,   DE_DLR,  DE_PERC, DE_LPRN, DE_RPRN,  _______,                          _______, DE_SLSH, DE_4, DE_5, DE_6,  DE_EQL,  _______,
     _______, DE_PIPE, DE_CIRC, DE_AMPR, DE_LBRC, DE_RBRC,  _______, _______,        _______, _______, DE_BSLS, DE_1, DE_2, DE_3,  DE_TILD, _______,
                                          DE_LABK, DE_RABK, _______, _______,        _______, _______, DE_0,    DE_DOT
@@ -222,7 +222,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* dead
  *
  * ,-------------------------------------------.                         ,-------------------------------------------.
- * |        |      |      |      |      |      |                         |      |   Ü  |      |   Ö  |      |        |
+ * |        |      |      |  e   |      |      |                         |      |   Ü  |      |   Ö  |      |        |
  * |--------+------+------+------+------+------|------.           .------|------+------+------+------+------+--------|
  * |        |  Ä   |   ß  |      |      |      |      |           |      |      |      |      |      |      |        |
  * |--------+------+------+------+------+------|------|           |------|------+------+------+------+------+--------|
