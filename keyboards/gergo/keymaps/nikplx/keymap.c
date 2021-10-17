@@ -109,7 +109,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC,          KC_Q,         KC_W,      KC_E,   KC_R,     KC_T,                                                   DE_Z,          KC_U,         KC_I,     KC_O,   KC_P,           KC_BSPC,
     KC_LCTL,         KC_A,         KC_S,      KC_D,   KC_F,     KC_G,           KC_VOLU,                       KC_MPLY, KC_H,          KC_J,         KC_K,     LOW_T(KC_L),   RAI_T(DE_PLUS), RCTL_T(DE_HASH),
     KC_LSFT,         DE_Y,         KC_X,      KC_C,   KC_V,     KC_B,           KC_VOLD, KC_F5,        KC_F12, KC_MNXT, KC_N,          KC_M,         DE_COMM,  DE_DOT, DE_MINS,        KC_RSFT,
-                                              KC_LALT, KC_SPC, MO(_GAMING_NUMB), KC_PGDN,       KC_PGUP,DEA_T(KC_ENT),  LGUI_T(KC_SPC), TG(_MOUSE)
+                                              KC_LALT, KC_SPC, MO(_GAMING_NUMB), DEA_T(KC_ENT),       KC_PGUP,DEA_T(KC_ENT),  LGUI_T(KC_SPC), TG(_MOUSE)
     ),
 /* Gaming Numb
  *
